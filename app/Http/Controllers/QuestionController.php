@@ -83,4 +83,20 @@ class QuestionController extends Controller
     {
         //
     }
+
+    public  function result(Request $request)
+    {
+        $data = $request -> all();
+        // $data = Question::find();
+        dump($data);
+        
+        if($data == 'Kering' || $data == 'Harian'){
+            echo("adsad");
+        }else{
+            echo("tesss");
+        }
+        
+        // dump($data);
+        // return view('konsultasi.result');
+    }
 }

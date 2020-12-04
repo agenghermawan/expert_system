@@ -22,6 +22,7 @@ Route::get('/konsultasi', function () {
 })->name('konsul');
 
 
+Route::post('question.result.{id}',[QuestionController::class,'result'])->name('question.result');
 Route::resource('question', QuestionController::class);
 
 
